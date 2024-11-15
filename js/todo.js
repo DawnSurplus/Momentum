@@ -22,6 +22,11 @@ function handleTodoSubmit(event){
     todoInput.value = "";
 }
 todoForm.addEventListener("submit", handleTodoSubmit);
+
+function deleteTodo(event){
+    const li = event.target.parentElement;
+    li.remove();    
+}
 // Event Function ==================================================
 
 
@@ -29,9 +34,16 @@ todoForm.addEventListener("submit", handleTodoSubmit);
 // Function ==================================================
 function paintTodo(newTodo){
     const li = document.createElement("li");
+    
     const span = document.createElement("span");
     span.innerText = newTodo;
+
+    const delBtn = document.createElement("button");
+    delBtn.innerText = "❌";
+    delBtn.addEventListener("click", deleteTodo);
+
     li.appendChild(span);
+    li.appendChild(delBtn);
 
     todoList.appendChild(li);
 }
