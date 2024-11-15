@@ -6,7 +6,7 @@ const author = document.querySelector("#quote span:last-child");
 
 
 // DEFINE ==================================================
-const QUOTES = [
+const QUOTES_LIST = [
     {
         quote : "지금 공부 안 하면 더울 때 더운 데서 일하고 추울 때 추운 데서 일한다",
         author : "박명수",
@@ -81,7 +81,7 @@ const QUOTES = [
 
 
 // Main ==================================================
-const todayQuote = QUOTES[Math.floor(Math.random()*QUOTES.length)];
+const todayQuote = QUOTES_LIST[Math.floor(Math.random()*QUOTES_LIST.length)];
 
 quote.innerText = todayQuote.quote;
 author.innerText = ` - ${todayQuote.author} -`;
