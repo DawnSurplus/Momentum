@@ -82,3 +82,57 @@ border: 2px solid white; /* 흰색 테두리 */
 
     place-items: center; /* 중앙 정렬 */    
 }
+
+
+
+/* input 스타일 */
+#login-input {  
+  width: 100%;
+  
+  background-color: rgba(255, 255, 255, 0); /* 투명한 배경 (흰색, 투명도 0.2) */
+  
+  color: white; /* 글자색을 흰색으로 설정 */
+  
+  font-size: 30px;
+  text-align: center;
+
+  border: none; /* 기본 테두리 제거 */
+  border-bottom: 2px solid white; /* 밑줄 추가 */
+}  
+/* input에 포커스가 있을 때 스타일 */
+#login-input:focus {    
+    width: 100%;
+
+    border-color: rgba(255, 255, 255, 0.8); /* 포커스 시 더 진한 흰색 테두리 */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* 포커스 시 흰색 그림자 효과 */
+
+    outline: none; /* 기본 아웃라인 제거 */
+}
+
+
+
+/* input 스타일 */
+#todo-input {  
+    width: 100%;
+    
+    background-color: rgba(255, 255, 255, 0); /* 투명한 배경 (흰색, 투명도 0.2) */
+    
+    color: white; /* 글자색을 흰색으로 설정 */
+    
+    font-size: 20px;
+    text-align: center;
+  
+    border: none; /* 기본 테두리 제거 */
+    border-bottom: 2px solid white; /* 밑줄 추가 */
+}
+    
+  /* input에 포커스가 있을 때 스타일 */
+#todo-input:focus {    
+      width: 100%;
+  
+      border-color: rgba(255, 255, 255, 0.8); /* 포커스 시 더 진한 흰색 테두리 */
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* 포커스 시 흰색 그림자 효과 */
+  
+      outline: none; /* 기본 아웃라인 제거 */
+}
+}
