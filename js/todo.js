@@ -59,11 +59,13 @@ function paintTodo(newTodoObj){
 
     // del 버튼 추가
     const delBtn = document.createElement("button");
+    delBtn.className = "delBtn";
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteTodo);
 
     li.appendChild(span);
     li.appendChild(delBtn);
+    li.className="todo-list";
 
     todoList.appendChild(li);
 }

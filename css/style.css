@@ -140,4 +140,16 @@ border: 2px solid white; /* 흰색 테두리 */
   
       outline: none; /* 기본 아웃라인 제거 */
 }
+
+
+
+.todo-list {    
+    color: white;
+    text-align: center;
+
+    font-style: italic;
+}
+.delBtn {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
 }
