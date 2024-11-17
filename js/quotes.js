@@ -1,6 +1,6 @@
 // Element ==================================================
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote-span");
+const author = document.querySelector("#author-span");
 // Element ==================================================
 
 
@@ -83,6 +83,6 @@ const QUOTES_LIST = [
 // Main ==================================================
 const todayQuote = QUOTES_LIST[Math.floor(Math.random()*QUOTES_LIST.length)];
 
-quote.innerText = todayQuote.quote;
+quote.innerText = `"${todayQuote.quote}"`;
 author.innerText = ` - ${todayQuote.author} -`;
 // Main ==================================================

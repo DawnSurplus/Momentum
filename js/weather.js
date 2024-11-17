@@ -31,7 +31,7 @@ function onGeoOk(position){
             const _temp = data.main.temp;
 
             weather.innerText = `${_weather} / ${_temp}℃`;
-            city.innerText = ` - ${_city}`;
+            city.innerText = ` / ${_city}`;
         });
 }
 

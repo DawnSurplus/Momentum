@@ -1,7 +1,6 @@
 // Element ==================================================
 const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input");
-const loginButton = loginForm.querySelector("button");
 
 const greeting = document.querySelector("#greeting");
 // Element ==================================================
@@ -36,7 +35,7 @@ function onLoginSubmit(event){
 // Function ==================================================
 // Greeting 문구 표시
 function paintGreeting(userName){
-    greeting.innerText = `Hello ${userName}`;
+    greeting.innerText = `Have a Nice Day!!\n- ${userName} -`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 // Function ==================================================

@@ -1,6 +1,5 @@
 // Element ==================================================
-// createElement() : element 추가
-const bgImage = document.createElement("img");
+
 // Element ==================================================
 
 
@@ -19,8 +18,6 @@ const IMAGES_LIST = [
 // Main ==================================================
 const chosenImage = IMAGES_LIST[Math.floor(Math.random()*IMAGES_LIST.length)];
 
-//bgImage.src = `img/${chosenImage}`
-//document.body.appendChild(bgImage);
 // body 태그의 스타일을 수정하여 배경 이미지 적용
 document.body.style.backgroundImage = `url('img/${chosenImage}')`;
 document.body.style.backgroundSize = 'cover';
